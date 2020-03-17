@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
+  <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.js">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div id = "section1" style="border: 1px solid gray; margin-top: 100px; height: auto;" class="container">
+    <div class="row" id="row1">
+      <div class="col-lg-1">
+        <button id="btnEdit" style="margin-top:70px;" class="btn btn-info">Edit</button>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <h5>Alphabet Inc.</h5>
+        <p>1600,Amphitheatre Parkway,
+          <br>Mountain View, CA 94043
+          <br>United States<br>
+          <a href="#">http://www.google.com</a>
+            </p>  
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <p>
+        Phone: +1 650-253-0000 
+          <br>
+          Email: <a href="#">info@google.com</a>
+          <br>
+        Sector: <b>Communication Services</b>
+          <br>
+        Industry: <b>Internet Content & Information</b>
+        <br>
+        Full-time employees:<b> 1,18,899</b>
+      </p>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <p>
+        Revenue: <b>USD 837.03B </b>
+          <br>
+        Hardware Eco-System: <b>Hardware Information</b>
+        <br>
+        Software Eco-System: <b>Software Information</b>
+        <br>
+        Est. IT Budget:<b> USD 123B</b>
+      </p>
+      </div>
+    </div>
+    <style>
+      #section1 input{
+        margin-left:5px;
+        height: 27px;
+        width: 150px ;
+        cursor: text;
+        border: none;
+      }
+    </style>
+    <!-- edit here first row-->
+    <div id="row1Edit" style="display: none;" class="row">
+     
+      <div class="col-lg-1">
+        <button id="btnSave" style="margin-top:70px;" class="btn btn-info">Save</button>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <label>Company :</label><input type="text" placeholder="Company Name"><br>
+        <label>Address 1:</label><input type="text" placeholder="Address 1"><br>
+        <label>Address 2:</label><input type="text" placeholder="Address 2"><br>
+        <label>Website:</label><input type="text" placeholder="Website">        
+            
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <label>Phone:</label><input type="text" placeholder="+1 650-253-0000 "><br>
+        <label>Email:</label><input type="text" placeholder="info@google.com"><br>
+        <label>Sector:</label><input type="text" placeholder="Communication Services"><br>
+        <label>Industry:</label><input type="text" placeholder="Internet Content & Information"><br>
+        <label>Full-time employees:</label><input type="text" placeholder="1,18,899 ">
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <label>Revenue:</label><input type="text" placeholder="USD 837.03B"><br>
+        <label>Hardware Eco-System:</label><input type="text" placeholder="Hardware Information"><br>
+        <label>Software Eco-System:</label><input type="text" placeholder="Software Information"><br>
+        <label>Est. IT Budget:</label><input type="text" placeholder="USD 123B">
+      </div>
+    </div>
+    <!-- edit first row ends here -->
+    <hr>
+
+    <div id="contact1"  class="row">
+      <div class="col-lg-1">
+        <input style="height: 20px; width: 20px; margin-top:60px; margin-left: 15px;" type="checkbox">
+        <button style=" margin-top:85px;" id="edit1" class="btn btn-info">Edit</button>
+      </div>
+      <div id="companyDetails" style="margin-top: 26px;" class="col-lg-3">
+        <!-- <h6>Contact Details</h6> -->
+        <p><b>Sundar Pichai</b>
+          <br>1600,Amphitheatre Parkway,
+          <br>Mountain View, CA 94043
+          <br>United States<br>
+          <a href="#">http://www.google.com</a>
+            </p>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <p>
+        Phone Desk: +1 650-253-0000 
+          <br>
+          Phone Business: +1 650-253-0000 
+          <br>
+          Mobile: +1 650-253-0000 
+          <br>
+          Email Business: <a href="#">sundarpichai@google.com</a>
+          <br>
+          Email Personal: <a href="#">sundarp@google.com</a>
+          <br>
+      </p>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-5">
+        <p>
+        Designation: <b>CEO & Director </b>
+          <br>
+        Department: <b>Client Engagement</b>
+        <br>
+        Social Profile (LinkedIn): <b>www.linkedin.com/sundarpichai</b>
+        <br>
+        Social Profile (Facebook): <b>www.facebook.com/sundarpichai</b>
+        <p>
+      </div>
+    </div>
+
+    <!-- edit here 2nd row -->
+    <div id="editContact1" style="display: none;" class="row">
+      <div class="col-lg-1">
+        <input style="height: 20px; width: 20px; margin-top:60px; margin-left: 15px;" type="checkbox">
+        <button id="save1" style=" margin-top:85px;" class="btn btn-info">Save</button>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <!-- <h6>Contact Details</h6> -->
+        <label>Name:</label><input type="text" placeholder="Sundar Pichai"><br>
+        <label>Address 1:</label><input type="text" placeholder="Address 1"><br>
+        <label>Address 2:</label><input type="text" placeholder="Address 2"><br>
+        <label>Website:</label><input type="text" placeholder="http://www.google.com">
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <label>Phone Desk: </label><input type="text" placeholder="+1 650-253-0000"><br>
+        <label>Phone Business:</label><input type="text" placeholder="+1 650-253-0000"><br>
+        <label>Mobile:</label><input type="text" placeholder="+1 650-253-0000"><br>
+        <label>Email Business:</label><input type="text" placeholder="sundarpichai@google.com"><br>
+        <label>Email Personal:</label><input type="text" placeholder="sundarp@google.com">
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <label>Designation: </label><input type="text" placeholder="CEO & Director"><br>
+        <label>Department:</label><input type="text" placeholder="Client Engagement"><br>
+        <label>Social Profile (LinkedIn):</label><input type="text" placeholder="www.linkedin.com/sundarpichai"><br>
+        <label>Social Profile (Facebook):</label><input type="text" placeholder="www.facebook.com/sundarpichai">
+       
+      </div>
+    </div>
+    <!-- edit 2nd row ends here -->
+
+    <div id="contact2"  class="row">
+      <div class="col-lg-1">
+        <input style="height: 20px; width: 20px; margin-top:60px; margin-left: 15px;" type="checkbox">
+        <button style=" margin-top:85px;" id="edit2" class="btn btn-info">Edit</button>
+      </div>
+      <div id="companyDetails" style="margin-top: 26px;" class="col-lg-3">
+        <!-- <h6>Contact Details</h6> -->
+        <p><b>Sundar Pichai 2</b>
+          <br>1600,Amphitheatre Parkway,
+          <br>Mountain View, CA 94043
+          <br>United States<br>
+          <a href="#">http://www.google.com</a>
+            </p>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <p>
+        Phone Desk: +1 650-253-0000 
+          <br>
+          Phone Business: +1 650-253-0000 
+          <br>
+          Mobile: +1 650-253-0000 
+          <br>
+          Email Business: <a href="#">sundarpichai@google.com</a>
+          <br>
+          Email Personal: <a href="#">sundarp@google.com</a>
+          <br>
+      </p>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-5">
+        <p>
+        Designation: <b>CEO & Director </b>
+          <br>
+        Department: <b>Client Engagement</b>
+        <br>
+        Social Profile (LinkedIn): <b>www.linkedin.com/sundarpichai</b>
+        <br>
+        Social Profile (Facebook): <b>www.facebook.com/sundarpichai</b>
+        <p>
+      </div>
+    </div>
+
+    <!-- edit here 3rd row -->
+    <div id="editContact2" style="display: none;" class="row">
+      <div class="col-lg-1">
+        <input style="height: 20px; width: 20px; margin-top:60px; margin-left: 15px;" type="checkbox">
+        <button id="save2" style=" margin-top:85px;" class="btn btn-info">Save</button>
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-3">
+        <!-- <h6>Contact Details</h6> -->
+        <label>Name:</label><input type="text" placeholder="Sundar Pichai 2"><br>
+        <label>Address 1:</label><input type="text" placeholder="Address 1"><br>
+        <label>Address 2:</label><input type="text" placeholder="Address 2"><br>
+        <label>Website:</label><input type="text" placeholder="http://www.google.com">
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <label>Phone Desk: </label><input type="text" placeholder="+1 650-253-0000"><br>
+        <label>Phone Business:</label><input type="text" placeholder="+1 650-253-0000"><br>
+        <label>Mobile:</label><input type="text" placeholder="+1 650-253-0000"><br>
+        <label>Email Business:</label><input type="text" placeholder="sundarpichai@google.com"><br>
+        <label>Email Personal:</label><input type="text" placeholder="sundarp@google.com">
+      </div>
+      <div style="margin-top: 26px;" id="companyDetails" class="col-lg-4">
+        <label>Designation: </label><input type="text" placeholder="CEO & Director"><br>
+        <label>Department:</label><input type="text" placeholder="Client Engagement"><br>
+        <label>Social Profile (LinkedIn):</label><input type="text" placeholder="www.linkedin.com/sundarpichai"><br>
+        <label>Social Profile (Facebook):</label><input type="text" placeholder="www.facebook.com/sundarpichai">
+       
+      </div>
+    </div>
+    <!-- edit 3rd row ends here -->  
+  </div>
+  
+  <h5 style="margin-left: 104px; margin-top: 60px; font-weight: 700;">Lead Status</h5>
+  
+  <div style="border: 1px solid gray; margin-top: 50px; height: auto; margin-bottom: 50px;" class="container">
+  <div class="row">
+    <div id="status" class="col-lg-2">
+      <h6>Current Status </h6>
+    </div>
+    <div id="status" class="col-lg-2">
+     <button id="step1" class="btn btn-primary">Step1</button>
+    </div>
+    <div id="status" class="col-lg-2">
+      <button id="step2" class="btn btn-primary">Step2</button>
+     </div>
+     <div id="status" class="col-lg-2">
+      <button id="step3" class="btn btn-primary">Step3</button>
+     </div>
+     <div id="status" class="col-lg-2">
+      <button id="step4" class="btn btn-primary">Step4</button>
+     </div>
+     <div id="status" class="col-lg-2">
+      <button id="step5" class="btn btn-primary">Step5</button>
+     </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-10">
+      <br>
+      <textarea id="textbox" style="width: 100%; height: 80px; margin-top:10px; padding:10px; display:none;" ></textarea>
+      <br>
+      <label class = "followup" style = "display: none;"><b>Followup Date & Time :</b></label>
+      
+      <input class="timestamp" style="display: none;" type="datetime-local">
+      <button style="float:right; display:none; margin-top:10px; margin-bottom:10px;" class="btn btn-primary btnSkip">Skip</button>
+      <button style="float:right; display:none; margin-top:10px; margin-bottom:10px; margin-right:5px;" class="btn btn-primary btncomplete">Complete</button>
+    </div>
+  </div>
+  </div>
+  <style>
+    #companyDetails{
+      padding-top:10px;
+      width: 200px;
+    }
+    #companyDetails p, a{
+      font-size: 14px;
+    }
+    #status{
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .container input {
+      position: absolute;
+      cursor: pointer;
+    }
+    .btn{
+      background: black;
+      color:white;
+      border: none;
+    }
+.btn:hover{
+      background: gray;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+   $(document).ready(function(){
+     $("#step1").click(function(){
+     $("textarea").css("display", "block"); 
+     $(".btncomplete").css("display", "block"); 
+     $(".btnSkip").css("display", "none"); 
+     $(".timestamp").css("display", "block");
+     $(".followup").css("display", "block"); 
+   });
+   $("#step2").click(function(){
+     $("textarea").css("display", "block"); 
+     $(".btnSkip").css("display", "block"); 
+     $(".timestamp").css("display", "block");
+     $(".followup").css("display", "block");
+     $(".btncomplete").css("display", "none"); 
+   });
+   $("#step3").click(function(){
+     $("textarea").css("display", "block"); 
+     $(".btnSkip").css("display", "block"); 
+     $(".timestamp").css("display", "block");
+     $(".followup").css("display", "block");
+     $(".btncomplete").css("display", "none"); 
+   });
+   $("#step4").click(function(){
+     $("textarea").css("display", "block"); 
+     $(".btnSkip").css("display", "block"); 
+     $(".timestamp").css("display", "block");
+     $(".followup").css("display", "block");
+     $(".btncomplete").css("display", "none"); 
+   });
+   $("#step5").click(function(){
+     $("textarea").css("display", "block"); 
+     $(".btncomplete").css("display", "block"); 
+     $(".timestamp").css("display", "block");
+     $(".followup").css("display", "block");
+     $(".btnSkip").css("display", "none"); 
+   });
+
+   $("#btnEdit").click(function(){
+    $("#row1").hide();
+    $("#row1Edit").show();
+    });
+    $("#btnSave").click(function(){
+    $("#row1").show();
+    $("#row1Edit").hide();
+    });
+
+    $("#edit1").click(function(){
+    $("#contact1").hide();
+    $("#editContact1").show();
+    });
+    $("#save1").click(function(){
+    $("#contact1").show();
+    $("#editContact1").hide();
+    });
+
+    $("#edit2").click(function(){
+    $("#contact2").hide();
+    $("#editContact2").show();
+    });
+    $("#save2").click(function(){
+    $("#contact2").show();
+    $("#editContact2").hide();
+    });
+  });
+    </script>
+    <script src="/jquery.js"></script>
+    <script src="/build/jquery.datetimepicker.full.min.js"></script>
+</body>
+</html>
